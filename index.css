@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("https://cdnb.artstation.com/p/assets/images/images/088/531/315/large/jolyn-hu-shot-001.jpg?1748522577");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    min-height: 100vh;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+    background: linear-gradient(to right, #ffffff, #acff7b);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar h1 {
+    font-size: 1.8em;
+    color: #333333;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #4b7c2d;
+    text-decoration: underline;
+}
+.container {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(89, 134, 68, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(2px);
+}
+
+.container h1 {
+    color: #fefefe;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.container p,
+.container ul,
+.container ol {
+    margin-bottom: 18px;
+    line-height: 1.6;
+}
+
+li {
+    margin-bottom: 10px;
+}
+a {
+    color: #ffe600;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #ffbcbc;
+}
+
+.footer a {
+    color: #ffe600;
+}
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-end;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar h1 {
+        margin-bottom: 10px;
+    }
+}
